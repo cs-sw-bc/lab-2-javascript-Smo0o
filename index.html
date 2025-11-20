@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pastel Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pastel Snake</h1>
+        <div class="hud">
+            <div id="score">Score: 0</div>
+            <div id="power">Invincible: 0s</div>
+            <button id="grid-toggle" class="control-btn">Grid: OFF</button>
+            <button id="fullscreen-btn" class="control-btn">Fullscreen</button>
+            
+        </div>
+        <canvas id="game" width="720" height="480"></canvas>
+        <div id="overlay" class="hidden">
+            <div class="overlay-card">
+                <h2 id="overlay-title">Game Over</h2>
+                <p id="overlay-score">Score: 0</p>
+                <button id="retry">Retry</button>
+            </div>
+        </div>
+        <!-- Horror flash overlay (hidden by default) -->
+        <div id="horror-overlay" class="hidden">
+            <canvas id="horror-canvas"></canvas>
+            <div id="horror-message"></div>
+        </div>
+        <p class="controls">Use arrow keys or WASD to move. Eat pellets to grow. Eat the blueberry for 20s
+            invincibility.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
